@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root id="AnchorPane" minHeight="96.0" prefHeight="96.0" prefWidth="493.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="30.0" layoutY="30.0" prefHeight="96.0" prefWidth="599.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="29.0" prefWidth="570.0" spacing="15.0">
+               <children>
+                  <Label text="Server" />
+                  <ChoiceBox fx:id="serverChoiceBox" prefWidth="150.0" />
+                  <Region prefHeight="25.0" prefWidth="1.0" HBox.hgrow="ALWAYS" />
+                  <Label text="Storage" />
+                  <ChoiceBox fx:id="storageChoiceBox" disable="true" prefHeight="25.0" prefWidth="178.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+                  <Button fx:id="okButton" disable="true" mnemonicParsing="false" onAction="#handleConfirm" text="Ok" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</fx:root>

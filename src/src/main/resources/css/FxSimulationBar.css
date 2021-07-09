@@ -1,0 +1,196 @@
+/* error */
+.tree-cell:done-error  {
+    -fx-background-color: #fa6c6c;
+}
+
+.tree-cell:done-error:selected  {
+    -fx-background-color: #de5353;
+}
+
+/* skipped */
+.tree-cell:done-skipped {
+    -fx-background-color: #dadada;
+}
+
+.tree-cell:done-skipped:selected {
+    -fx-background-color: #b9b9b9;
+}
+
+/* download success */
+.tree-cell:download-done-success {
+    -fx-background-color: #7fe399;
+}
+
+.tree-cell:download-done-success:selected {
+    -fx-background-color: #59bf5f;
+}
+
+/* download running */
+.tree-cell:download-running-0 {
+    -fx-background-color: #f3f3f3;
+}
+
+.tree-cell:download-running-5 {
+    -fx-background-color: linear-gradient(to right, #7fe399 5%, #c7f9ca 5%);
+}
+
+.tree-cell:download-running-10 {
+    -fx-background-color: linear-gradient(to right, #7fe399 10%, #c7f9ca 10%);
+}
+
+.tree-cell:download-running-15 {
+    -fx-background-color: linear-gradient(to right, #7fe399 15%, #c7f9ca 15%);
+}
+
+.tree-cell:download-running-20 {
+    -fx-background-color: linear-gradient(to right, #7fe399 20%, #c7f9ca 20%);
+}
+
+.tree-cell:download-running-25 {
+    -fx-background-color: linear-gradient(to right, #7fe399 25%, #c7f9ca 25%);
+}
+
+.tree-cell:download-running-30 {
+    -fx-background-color: linear-gradient(to right, #7fe399 30%, #c7f9ca 30%);
+}
+
+.tree-cell:download-running-35 {
+    -fx-background-color: linear-gradient(to right, #7fe399 35%, #c7f9ca 35%);
+}
+
+.tree-cell:download-running-40 {
+    -fx-background-color: linear-gradient(to right, #7fe399 40%, #c7f9ca 40%);
+}
+
+.tree-cell:download-running-45 {
+    -fx-background-color: linear-gradient(to right, #7fe399 45%, #c7f9ca 45%);
+}
+
+.tree-cell:download-running-50 {
+    -fx-background-color: linear-gradient(to right, #7fe399 50%, #c7f9ca 50%);
+}
+
+.tree-cell:download-running-55 {
+    -fx-background-color: linear-gradient(to right, #7fe399 55%, #c7f9ca 55%);
+}
+
+.tree-cell:download-running-60 {
+    -fx-background-color: linear-gradient(to right, #7fe399 60%, #c7f9ca 60%);
+}
+
+.tree-cell:download-running-65 {
+    -fx-background-color: linear-gradient(to right, #7fe399 65%, #c7f9ca 65%);
+}
+
+.tree-cell:download-running-70 {
+    -fx-background-color: linear-gradient(to right, #7fe399 70%, #c7f9ca 70%);
+}
+
+.tree-cell:download-running-75 {
+    -fx-background-color: linear-gradient(to right, #7fe399 75%, #c7f9ca 75%);
+}
+
+.tree-cell:download-running-80 {
+    -fx-background-color: linear-gradient(to right, #7fe399 80%, #c7f9ca 80%);
+}
+
+.tree-cell:download-running-85 {
+    -fx-background-color: linear-gradient(to right, #7fe399 85%, #c7f9ca 85%);
+}
+
+.tree-cell:download-running-90 {
+    -fx-background-color: linear-gradient(to right, #7fe399 90%, #c7f9ca 90%);
+}
+
+.tree-cell:download-running-95 {
+    -fx-background-color: linear-gradient(to right, #7fe399 95%, #c7f9ca 95%);
+}
+
+/* upload */
+.tree-cell:upload-done-success {
+    -fx-background-color: #9dc1e7;
+}
+.tree-cell:upload-done-success:selected {
+    -fx-background-color: #588cc4;
+}
+
+/* upload running */
+.tree-cell:upload-running-0 {
+    -fx-background-color: #f3f3f3;
+}
+
+.tree-cell:upload-running-5 {
+    -fx-background-color: linear-gradient(to right, #9dc1e7 5%, #bcd8f6 5%);
+}
+
+.tree-cell:upload-running-10 {
+    -fx-background-color: linear-gradient(to right, #9dc1e7 10%, #bcd8f6 10%);
+}
+
+.tree-cell:upload-running-15 {
+    -fx-background-color: linear-gradient(to right, #9dc1e7 15%, #bcd8f6 15%);
+}
+
+.tree-cell:upload-running-20 {
+    -fx-background-color: linear-gradient(to right, #9dc1e7 20%, #bcd8f6 20%);
+}
+
+.tree-cell:upload-running-25 {
+    -fx-background-color: linear-gradient(to right, #9dc1e7 25%, #bcd8f6 25%);
+}
+
+.tree-cell:upload-running-30 {
+    -fx-background-color: linear-gradient(to right, #9dc1e7 30%, #bcd8f6 30%);
+}
+
+.tree-cell:upload-running-35 {
+    -fx-background-color: linear-gradient(to right, #9dc1e7 35%, #bcd8f6 35%);
+}
+
+.tree-cell:upload-running-40 {
+    -fx-background-color: linear-gradient(to right, #9dc1e7 40%, #bcd8f6 40%);
+}
+
+.tree-cell:upload-running-45 {
+    -fx-background-color: linear-gradient(to right, #9dc1e7 45%, #bcd8f6 45%);
+}
+
+.tree-cell:upload-running-50 {
+    -fx-background-color: linear-gradient(to right, #9dc1e7 50%, #bcd8f6 50%);
+}
+
+.tree-cell:upload-running-55 {
+    -fx-background-color: linear-gradient(to right, #9dc1e7 55%, #bcd8f6 55%);
+}
+
+.tree-cell:upload-running-60 {
+    -fx-background-color: linear-gradient(to right, #9dc1e7 60%, #bcd8f6 60%);
+}
+
+.tree-cell:upload-running-65 {
+    -fx-background-color: linear-gradient(to right, #9dc1e7 65%, #bcd8f6 65%);
+}
+
+.tree-cell:upload-running-70 {
+    -fx-background-color: linear-gradient(to right, #9dc1e7 70%, #bcd8f6 70%);
+}
+
+.tree-cell:upload-running-75 {
+    -fx-background-color: linear-gradient(to right, #9dc1e7 75%, #bcd8f6 75%);
+}
+
+.tree-cell:upload-running-80 {
+    -fx-background-color: linear-gradient(to right, #9dc1e7 80%, #bcd8f6 80%);
+}
+
+.tree-cell:upload-running-85 {
+    -fx-background-color: linear-gradient(to right, #9dc1e7 85%, #bcd8f6 85%);
+}
+
+.tree-cell:upload-running-90 {
+    -fx-background-color: linear-gradient(to right, #9dc1e7 90%, #bcd8f6 90%);
+}
+
+.tree-cell:upload-running-95 {
+    -fx-background-color: linear-gradient(to right, #9dc1e7 95%, #bcd8f6 95%);
+}

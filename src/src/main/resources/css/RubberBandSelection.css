@@ -1,0 +1,3 @@
+.highlight {
+    -fx-effect: dropshadow(three-pass-box, #007DFC, 4, 4, 0, 0);
+}

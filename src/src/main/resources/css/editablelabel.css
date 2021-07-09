@@ -1,0 +1,7 @@
+.editable-label:editable {
+    -fx-background-color: #F2F2F2;
+}
+
+.editable-label {
+    -fx-padding: 5px;
+}

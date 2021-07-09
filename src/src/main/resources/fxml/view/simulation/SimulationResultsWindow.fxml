@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<fx:root fx:id="stackPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" type="StackPane" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <javafx.scene.control.TabPane fx:id="tabPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="846.0" tabClosingPolicy="UNAVAILABLE">
+          <tabs>
+              <Tab text="Results">
+                  <content>
+                      <VBox alignment="CENTER_LEFT" prefHeight="145.0" prefWidth="164.0" spacing="15.0">
+                          <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="9.0" prefWidth="195.0" spacing="15.0">
+                                  <VBox.margin>
+                                      <Insets />
+                                  </VBox.margin>
+                                  <children>
+                                      <Label text="Time unit" />
+                                      <ChoiceBox fx:id="timeUnitChoiceBox" prefWidth="150.0" />
+                                      <Label text="Speed unit" />
+                                      <ChoiceBox fx:id="speedUnitChoiceBox" prefWidth="150.0" />
+                                      <Label text="Size unit" />
+                                      <ChoiceBox fx:id="sizeUnitChoiceBox" prefWidth="150.0" />
+                                  </children>
+                              </HBox>
+                              <TableView fx:id="resultsTable" prefHeight="373.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+                                  <columns>
+                                      <TableColumn fx:id="resultsMethodCol" prefWidth="190.0" text="Method" />
+                                      <TableColumn fx:id="resultsTimeCol" prefWidth="121.0" text="Time" />
+                                      <TableColumn fx:id="resultsAvgSpeedCol" prefWidth="171.0" text="Average speed" />
+                                      <TableColumn fx:id="resultsDownloadedCol" prefWidth="159.0" text="Downloaded" />
+                                      <TableColumn fx:id="resultsUploadedCol" prefWidth="161.0" text="Uploaded" />
+                                  </columns>
+                              </TableView>
+                              <Button mnemonicParsing="false" onAction="#exportResultsCsv" text="Export to CSV" VBox.vgrow="NEVER" />
+                          </children>
+                          <padding>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                          </padding>
+                      </VBox>
+                  </content>
+              </Tab>
+              <Tab text="Visualised">
+               <content>
+                  <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                     <children>
+                        <HBox prefHeight="27.0" prefWidth="784.0">
+                           <children>
+                              <ChoiceBox fx:id="visualisedEntityBox" prefHeight="25.0" prefWidth="279.0" />
+                              <HBox alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="653.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Data filter" />
+                                    <ChoiceBox fx:id="visDataFilterSelect" prefHeight="25.0" prefWidth="212.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <LineChart fx:id="visualisationChart" prefHeight="532.0" prefWidth="784.0" VBox.vgrow="ALWAYS">
+                          <xAxis>
+                            <NumberAxis fx:id="visualisationChartXAxis" side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis fx:id="visualisationChartYAxis" side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </Tab>
+              <Tab text="Simulation log">
+               <content>
+                  <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                     <children>
+                        <ChoiceBox fx:id="logRunBox" prefWidth="150.0" />
+                        <ListView fx:id="logRunListView" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </Tab>
+          </tabs>
+      </javafx.scene.control.TabPane>
+   </children>
+</fx:root>

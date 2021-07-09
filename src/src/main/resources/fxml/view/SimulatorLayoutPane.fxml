@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="950.0" type="javafx.scene.layout.BorderPane" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleSimulatorClose" text="Close" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Simulator">
+              <items>
+                <MenuItem fx:id="menuRemoveAll" mnemonicParsing="false" text="Clear configuration" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleImportConfiguration" text="Import configuration" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleExportConfiguration" text="Export configuration" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="View">
+              <items>
+                  <Menu mnemonicParsing="false" text="Link type">
+                     <items>
+                        <RadioMenuItem fx:id="menuUseLinkLine" mnemonicParsing="false" selected="true" text="Line">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="linkType" />
+                           </toggleGroup>
+                        </RadioMenuItem>
+                        <RadioMenuItem fx:id="menuUseLinkBezier" mnemonicParsing="false" text="Bezier curve" toggleGroup="$linkType" />
+                     </items>
+                  </Menu>
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem onAction="#handleAboutDialogRequested" mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</fx:root>

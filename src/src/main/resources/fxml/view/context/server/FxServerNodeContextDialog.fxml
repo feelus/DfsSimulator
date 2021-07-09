@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root type="GridPane" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <DialogPane expanded="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="665.0" minWidth="-Infinity" prefHeight="665.0" prefWidth="850.0">
+          <content>
+              <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="660.0" prefHeight="660.0" prefWidth="850.0">
+                  <top>
+                      <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="104.0" prefWidth="830.0" style="-fx-border-color: #c8c8c8; -fx-border-width: 1 1 0 1; -fx-background-color: #fafafa;" BorderPane.alignment="CENTER">
+                          <children>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #a7a7a7;" StackPane.alignment="CENTER_LEFT">
+                                  <children>
+                                      <ImageView fx:id="nodeImageView" fitHeight="64.0" fitWidth="64.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0" />
+                                      <Label layoutX="101.0" layoutY="20.0" text="Node type" textFill="#434343">
+                                          <font>
+                                              <Font name="System Bold" size="12.0" />
+                                          </font>
+                                      </Label>
+                                      <Label layoutX="486.0" layoutY="20.0" text="Node ID" textFill="#434343">
+                                          <font>
+                                              <Font name="System Bold" size="12.0" />
+                                          </font>
+                                      </Label>
+                                      <Label layoutX="209.0" layoutY="20.0" text="Node connections" textFill="#434343">
+                                          <font>
+                                              <Font name="System Bold" size="12.0" />
+                                          </font>
+                                      </Label>
+                                      <Text layoutX="101.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Server" />
+                                      <Text fx:id="infoNodeID" layoutX="486.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                                      <Text fx:id="infoNodeConnections" layoutX="209.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                              <Label layoutX="368.0" layoutY="20.0" text="Storage">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Text fx:id="infoNodeStorage" layoutX="368.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                                  </children>
+                              </AnchorPane>
+                              <Button fx:id="deleteNodeButton" alignment="TOP_RIGHT" mnemonicParsing="false" text="Delete node" StackPane.alignment="TOP_RIGHT">
+                                  <StackPane.margin>
+                                      <Insets right="10.0" top="10.0" />
+                                  </StackPane.margin>
+                              </Button>
+                          </children>
+                      </StackPane>
+                  </top>
+                  <center>
+                      <TabPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="830.0" style="-fx-border-color: c8c8c8; -fx-border-width: 1;" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+                          <tabs>
+                              <Tab text="Storage configuration">
+                                  <content>
+                                      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="828.0">
+                                          <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          </columnConstraints>
+                                          <rowConstraints>
+                                              <RowConstraints maxHeight="64.0" minHeight="50.0" prefHeight="63.0" vgrow="NEVER" />
+                                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="380.0" valignment="CENTER" vgrow="ALWAYS" />
+                                          </rowConstraints>
+                                          <children>
+                                              <cz.zcu.kiv.dfs_simulator.view.context.server.FxStorageTable fx:id="storageTable" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="350.0" prefWidth="828.0" GridPane.rowIndex="1">
+                                                  <columns>
+                                                      <TableColumn fx:id="storageIdCol" prefWidth="75.0" style="-fx-alignment: CENTER;" text="ID">
+                                                          <cellValueFactory>
+                                                              <javafx.scene.control.cell.PropertyValueFactory property="id" />
+                                                          </cellValueFactory>
+                                                      </TableColumn>
+                                                      <TableColumn fx:id="storageCapacity" prefWidth="227.0" style="-fx-alignment: CENTER;" text="Capacity" />
+                                                      <TableColumn fx:id="storageSpeedCol" minWidth="0.0" prefWidth="162.0" style="-fx-alignment: CENTER;" text="Speed">
+                                                      </TableColumn>
+                                                  </columns>
+                                              </cz.zcu.kiv.dfs_simulator.view.context.server.FxStorageTable>
+                                                <Button fx:id="addStorageButton" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#handleAddStorageDevice" text="+ Add device" GridPane.halignment="RIGHT">
+                                       <GridPane.margin>
+                                          <Insets right="15.0" />
+                                       </GridPane.margin>
+                                    </Button>
+                                          </children>
+                                      </GridPane>
+                                  </content>
+                              </Tab>
+                              <Tab text="File structure">
+                                  <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                          <children>
+                                              <cz.zcu.kiv.dfs_simulator.view.context.server.FxFsTable fx:id="fileStructureTable" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="15.0">
+                                                  <columns>
+                                                      <TreeTableColumn fx:id="fileStructureItemCol" prefWidth="400.0" text="Item" />
+                                                      <TreeTableColumn fx:id="fileStructureSizeCol" prefWidth="125.0" style="-fx-alignment: CENTER;" text="Size" />
+                                                      <TreeTableColumn fx:id="fileStructureMountCol" minWidth="0.0" prefWidth="150.0" style="-fx-alignment: CENTER;" text="Mounted on device" />
+                                                      <TreeTableColumn fx:id="fileStructureTypeCol" prefWidth="125.0" style="-fx-alignment: CENTER;" text="Type" />
+                                                  </columns>
+                                              </cz.zcu.kiv.dfs_simulator.view.context.server.FxFsTable>
+                                          </children>
+                                      </AnchorPane>
+                                  </content>
+                              </Tab>
+                              <Tab text="Node connections">
+                                  <content>
+                                      <GridPane>
+                                          <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          </columnConstraints>
+                                          <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          </rowConstraints>
+                                          <children>
+                                              <cz.zcu.kiv.dfs_simulator.view.context.FxConnectionTable fx:id="connectionTable" prefHeight="200.0" prefWidth="200.0">
+                                                  <columns>
+                                                      <TableColumn prefWidth="121.0" text="Node ID">
+                                                          <cellValueFactory>
+                                                              <javafx.scene.control.cell.PropertyValueFactory property="neighbourID" />
+                                                          </cellValueFactory>
+                                                      </TableColumn>
+                                                      <TableColumn fx:id="linkBandwidthCol" prefWidth="178.0" text="Link bandwidth" />
+                                                      <TableColumn prefWidth="153.0" text="Link latency (ms)">
+                                                          <cellValueFactory>
+                                                              <javafx.scene.control.cell.PropertyValueFactory property="latency" />
+                                                          </cellValueFactory>
+                                                      </TableColumn>
+                                                  </columns>
+                                              </cz.zcu.kiv.dfs_simulator.view.context.FxConnectionTable>
+                                          </children>
+                                          <padding>
+                                              <Insets top="15.0" />
+                                          </padding>
+                                      </GridPane>
+                                  </content>
+                              </Tab>
+                          </tabs>
+                      </TabPane>
+                  </center>
+              </BorderPane>
+          </content>
+      </DialogPane>
+   </children>
+</fx:root>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="edge-to-edge" type="javafx.scene.control.ScrollPane" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <AnchorPane fx:id="content" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF,        linear-gradient(from 0.5px 0px to 10.5px 0px, repeat, #f1f1f1 5%, transparent 5%),        linear-gradient(from 0px 0.5px to 0px 10.5px, repeat, #f1f1f1 5%, transparent 5%);" />
+   </content>
+</fx:root>

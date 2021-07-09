@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root_layout>
+  <content_pane>
+    <fx_server_node label-x="133.0" label-y="36.0" layout-x="149.0" layout-y="14.0">
+      <server_node id="FS1">
+        <file_structure>
+          <fs_directory name="/">
+            <fs_file name="f4" size="450000000"/>
+            <fs_file name="f1" size="15000000"/>
+          </fs_directory>
+        </file_structure>
+        <server_storage>
+          <storage_device id="stor4" size="100000000" speed="1000000000"/>
+          <storage_device id="stor6" size="10000000000000" speed="5000000"/>
+        </server_storage>
+        <mount_table>
+          <mount_entry device="stor6" path="/f4"/>
+          <mount_entry device="stor6" path="/f1"/>
+        </mount_table>
+      </server_node>
+    </fx_server_node>
+    <fx_server_node label-x="496.0" label-y="40.0" layout-x="432.0" layout-y="14.0">
+      <server_node id="FS2">
+        <file_structure>
+          <fs_directory name="/">
+            <fs_file name="f2" size="100000000"/>
+          </fs_directory>
+        </file_structure>
+        <server_storage>
+          <storage_device id="stor5" size="250000000000" speed="500000000"/>
+        </server_storage>
+        <mount_table>
+          <mount_entry device="stor5" path="/f2"/>
+        </mount_table>
+      </server_node>
+    </fx_server_node>
+    <fx_server_node label-x="71.0" label-y="382.0" layout-x="48.0" layout-y="310.0">
+      <server_node id="FS3">
+        <file_structure>
+          <fs_directory name="/">
+            <fs_file name="f3" size="4000000"/>
+          </fs_directory>
+        </file_structure>
+        <server_storage>
+          <storage_device id="stor1" size="5000000000000" speed="5000000"/>
+        </server_storage>
+        <mount_table>
+          <mount_entry device="stor1" path="/f3"/>
+        </mount_table>
+      </server_node>
+    </fx_server_node>
+    <fx_server_node label-x="546.0" label-y="380.0" layout-x="520.0" layout-y="313.0">
+      <server_node id="FS4">
+        <file_structure>
+          <fs_directory name="/">
+            <fs_file name="f4" size="450000000"/>
+          </fs_directory>
+        </file_structure>
+        <server_storage>
+          <storage_device id="stor2" size="5000000000000" speed="5000000"/>
+          <storage_device id="stor3" size="1000000000000" speed="200000000"/>
+        </server_storage>
+        <mount_table>
+          <mount_entry device="stor2" path="/f4"/>
+        </mount_table>
+      </server_node>
+    </fx_server_node>
+    <fx_client_node label-x="299.0" label-y="539.0" layout-x="276.0" layout-y="470.0">
+      <client_node id="Klient"/>
+    </fx_client_node>
+    <node_connections>
+      <connection bandwidth="125000000" latency="15" n1="FS1" n2="FS2">
+        <line_connection_characteristic period_interval_ms="60000">
+          <connection_characteristic_point x="0.0" y="1.0"/>
+          <connection_characteristic_point x="1.0" y="1.0"/>
+          <connection_characteristic_point x="0.05263157894736842" y="1.0"/>
+          <connection_characteristic_point x="0.10526315789473684" y="1.0"/>
+          <connection_characteristic_point x="0.15789473684210525" y="1.0"/>
+          <connection_characteristic_point x="0.21052631578947367" y="1.0"/>
+          <connection_characteristic_point x="0.2631578947368421" y="1.0"/>
+          <connection_characteristic_point x="0.3157894736842105" y="1.0"/>
+          <connection_characteristic_point x="0.3684210526315789" y="1.0"/>
+          <connection_characteristic_point x="0.42105263157894735" y="1.0"/>
+          <connection_characteristic_point x="0.47368421052631576" y="1.0"/>
+          <connection_characteristic_point x="0.5263157894736842" y="1.0"/>
+          <connection_characteristic_point x="0.5789473684210527" y="1.0"/>
+          <connection_characteristic_point x="0.631578947368421" y="1.0"/>
+          <connection_characteristic_point x="0.6842105263157894" y="1.0"/>
+          <connection_characteristic_point x="0.7368421052631579" y="1.0"/>
+          <connection_characteristic_point x="0.7894736842105263" y="1.0"/>
+          <connection_characteristic_point x="0.8421052631578947" y="1.0"/>
+          <connection_characteristic_point x="0.894736842105263" y="1.0"/>
+          <connection_characteristic_point x="0.9473684210526315" y="1.0"/>
+        </line_connection_characteristic>
+      </connection>
+      <connection bandwidth="125000000" latency="1" n1="FS1" n2="FS3">
+        <line_connection_characteristic period_interval_ms="60000">
+          <connection_characteristic_point x="0.0" y="1.0"/>
+          <connection_characteristic_point x="1.0" y="1.0"/>
+          <connection_characteristic_point x="0.05263157894736842" y="1.0"/>
+          <connection_characteristic_point x="0.10526315789473684" y="1.0"/>
+          <connection_characteristic_point x="0.15789473684210525" y="1.0"/>
+          <connection_characteristic_point x="0.21052631578947367" y="1.0"/>
+          <connection_characteristic_point x="0.2631578947368421" y="1.0"/>
+          <connection_characteristic_point x="0.3157894736842105" y="1.0"/>
+          <connection_characteristic_point x="0.3684210526315789" y="1.0"/>
+          <connection_characteristic_point x="0.42105263157894735" y="1.0"/>
+          <connection_characteristic_point x="0.47368421052631576" y="1.0"/>
+          <connection_characteristic_point x="0.5263157894736842" y="1.0"/>
+          <connection_characteristic_point x="0.5789473684210527" y="1.0"/>
+          <connection_characteristic_point x="0.631578947368421" y="1.0"/>
+          <connection_characteristic_point x="0.6842105263157894" y="1.0"/>
+          <connection_characteristic_point x="0.7368421052631579" y="1.0"/>
+          <connection_characteristic_point x="0.7894736842105263" y="1.0"/>
+          <connection_characteristic_point x="0.8421052631578947" y="1.0"/>
+          <connection_characteristic_point x="0.894736842105263" y="1.0"/>
+          <connection_characteristic_point x="0.9473684210526315" y="1.0"/>
+        </line_connection_characteristic>
+      </connection>
+      <connection bandwidth="12500000" latency="5" n1="FS2" n2="FS4">
+        <line_connection_characteristic period_interval_ms="60000">
+          <connection_characteristic_point x="0.0" y="1.0"/>
+          <connection_characteristic_point x="1.0" y="1.0"/>
+          <connection_characteristic_point x="0.05263157894736842" y="1.0"/>
+          <connection_characteristic_point x="0.10526315789473684" y="1.0"/>
+          <connection_characteristic_point x="0.15789473684210525" y="1.0"/>
+          <connection_characteristic_point x="0.21052631578947367" y="1.0"/>
+          <connection_characteristic_point x="0.2631578947368421" y="1.0"/>
+          <connection_characteristic_point x="0.3157894736842105" y="1.0"/>
+          <connection_characteristic_point x="0.3684210526315789" y="1.0"/>
+          <connection_characteristic_point x="0.42105263157894735" y="1.0"/>
+          <connection_characteristic_point x="0.47368421052631576" y="1.0"/>
+          <connection_characteristic_point x="0.5263157894736842" y="1.0"/>
+          <connection_characteristic_point x="0.5789473684210527" y="1.0"/>
+          <connection_characteristic_point x="0.631578947368421" y="1.0"/>
+          <connection_characteristic_point x="0.6842105263157894" y="1.0"/>
+          <connection_characteristic_point x="0.7368421052631579" y="1.0"/>
+          <connection_characteristic_point x="0.7894736842105263" y="1.0"/>
+          <connection_characteristic_point x="0.8421052631578947" y="1.0"/>
+          <connection_characteristic_point x="0.894736842105263" y="1.0"/>
+          <connection_characteristic_point x="0.9473684210526315" y="1.0"/>
+        </line_connection_characteristic>
+      </connection>
+      <connection bandwidth="125000000" latency="1" n1="FS3" n2="FS4">
+        <line_connection_characteristic period_interval_ms="60000">
+          <connection_characteristic_point x="0.0" y="1.0"/>
+          <connection_characteristic_point x="1.0" y="1.0"/>
+          <connection_characteristic_point x="0.05263157894736842" y="1.0"/>
+          <connection_characteristic_point x="0.10526315789473684" y="1.0"/>
+          <connection_characteristic_point x="0.15789473684210525" y="1.0"/>
+          <connection_characteristic_point x="0.21052631578947367" y="1.0"/>
+          <connection_characteristic_point x="0.2631578947368421" y="1.0"/>
+          <connection_characteristic_point x="0.3157894736842105" y="1.0"/>
+          <connection_characteristic_point x="0.3684210526315789" y="1.0"/>
+          <connection_characteristic_point x="0.42105263157894735" y="1.0"/>
+          <connection_characteristic_point x="0.47368421052631576" y="1.0"/>
+          <connection_characteristic_point x="0.5263157894736842" y="1.0"/>
+          <connection_characteristic_point x="0.5789473684210527" y="1.0"/>
+          <connection_characteristic_point x="0.631578947368421" y="1.0"/>
+          <connection_characteristic_point x="0.6842105263157894" y="1.0"/>
+          <connection_characteristic_point x="0.7368421052631579" y="1.0"/>
+          <connection_characteristic_point x="0.7894736842105263" y="1.0"/>
+          <connection_characteristic_point x="0.8421052631578947" y="1.0"/>
+          <connection_characteristic_point x="0.894736842105263" y="1.0"/>
+          <connection_characteristic_point x="0.9473684210526315" y="1.0"/>
+        </line_connection_characteristic>
+      </connection>
+      <connection bandwidth="12500000" latency="5" n1="FS1" n2="FS4">
+        <line_connection_characteristic period_interval_ms="60000">
+          <connection_characteristic_point x="0.0" y="1.0"/>
+          <connection_characteristic_point x="1.0" y="1.0"/>
+          <connection_characteristic_point x="0.05263157894736842" y="1.0"/>
+          <connection_characteristic_point x="0.10526315789473684" y="1.0"/>
+          <connection_characteristic_point x="0.15789473684210525" y="1.0"/>
+          <connection_characteristic_point x="0.21052631578947367" y="1.0"/>
+          <connection_characteristic_point x="0.2631578947368421" y="1.0"/>
+          <connection_characteristic_point x="0.3157894736842105" y="1.0"/>
+          <connection_characteristic_point x="0.3684210526315789" y="1.0"/>
+          <connection_characteristic_point x="0.42105263157894735" y="1.0"/>
+          <connection_characteristic_point x="0.47368421052631576" y="1.0"/>
+          <connection_characteristic_point x="0.5263157894736842" y="1.0"/>
+          <connection_characteristic_point x="0.5789473684210527" y="1.0"/>
+          <connection_characteristic_point x="0.631578947368421" y="1.0"/>
+          <connection_characteristic_point x="0.6842105263157894" y="1.0"/>
+          <connection_characteristic_point x="0.7368421052631579" y="1.0"/>
+          <connection_characteristic_point x="0.7894736842105263" y="1.0"/>
+          <connection_characteristic_point x="0.8421052631578947" y="1.0"/>
+          <connection_characteristic_point x="0.894736842105263" y="1.0"/>
+          <connection_characteristic_point x="0.9473684210526315" y="1.0"/>
+        </line_connection_characteristic>
+      </connection>
+      <connection bandwidth="1300000" latency="20" n1="FS2" n2="FS3">
+        <line_connection_characteristic period_interval_ms="60000">
+          <connection_characteristic_point x="0.0" y="1.0"/>
+          <connection_characteristic_point x="1.0" y="1.0"/>
+          <connection_characteristic_point x="0.05263157894736842" y="1.0"/>
+          <connection_characteristic_point x="0.10526315789473684" y="1.0"/>
+          <connection_characteristic_point x="0.15789473684210525" y="1.0"/>
+          <connection_characteristic_point x="0.21052631578947367" y="1.0"/>
+          <connection_characteristic_point x="0.2631578947368421" y="1.0"/>
+          <connection_characteristic_point x="0.3157894736842105" y="1.0"/>
+          <connection_characteristic_point x="0.3684210526315789" y="1.0"/>
+          <connection_characteristic_point x="0.42105263157894735" y="1.0"/>
+          <connection_characteristic_point x="0.47368421052631576" y="1.0"/>
+          <connection_characteristic_point x="0.5263157894736842" y="1.0"/>
+          <connection_characteristic_point x="0.5789473684210527" y="1.0"/>
+          <connection_characteristic_point x="0.631578947368421" y="1.0"/>
+          <connection_characteristic_point x="0.6842105263157894" y="1.0"/>
+          <connection_characteristic_point x="0.7368421052631579" y="1.0"/>
+          <connection_characteristic_point x="0.7894736842105263" y="1.0"/>
+          <connection_characteristic_point x="0.8421052631578947" y="1.0"/>
+          <connection_characteristic_point x="0.894736842105263" y="1.0"/>
+          <connection_characteristic_point x="0.9473684210526315" y="1.0"/>
+        </line_connection_characteristic>
+      </connection>
+      <connection bandwidth="6700000" latency="150" n1="Klient" n2="FS4">
+        <line_connection_characteristic period_interval_ms="60000">
+          <connection_characteristic_point x="0.0" y="1.0"/>
+          <connection_characteristic_point x="1.0" y="1.0"/>
+          <connection_characteristic_point x="0.05" y="0.9185393258426966"/>
+          <connection_characteristic_point x="0.10" y="0.7023595505617978"/>
+          <connection_characteristic_point x="0.15" y="0.6117977528089887"/>
+          <connection_characteristic_point x="0.20" y="0.6001123595505617"/>
+          <connection_characteristic_point x="0.25" y="0.6293258426966292"/>
+          <connection_characteristic_point x="0.30" y="0.5708988764044943"/>
+          <connection_characteristic_point x="0.35" y="0.4598876404494382"/>
+          <connection_characteristic_point x="0.40" y="0.31382022471910115"/>
+          <connection_characteristic_point x="0.45" y="0.2203370786516854"/>
+          <connection_characteristic_point x="0.50" y="0.26123595505617975"/>
+          <connection_characteristic_point x="0.55" y="0.3897752808988764"/>
+          <connection_characteristic_point x="0.60" y="0.5241573033707865"/>
+          <connection_characteristic_point x="0.65" y="0.7432584269662921"/>
+          <connection_characteristic_point x="0.70" y="0.880561797752809"/>
+          <connection_characteristic_point x="0.75" y="0.9682022471910112"/>
+          <connection_characteristic_point x="0.80" y="1.0"/>
+          <connection_characteristic_point x="0.85" y="1.0"/>
+          <connection_characteristic_point x="0.90" y="1.0"/>
+          <connection_characteristic_point x="0.95" y="1.0"/>
+        </line_connection_characteristic>
+      </connection>
+      <connection bandwidth="12500" latency="200" n1="Klient" n2="FS3">
+        <line_connection_characteristic period_interval_ms="60000">
+          <connection_characteristic_point x="0.0" y="1.0"/>
+          <connection_characteristic_point x="1.0" y="1.0"/>
+          <connection_characteristic_point x="0.05263157894736842" y="1.0"/>
+          <connection_characteristic_point x="0.10526315789473684" y="1.0"/>
+          <connection_characteristic_point x="0.15789473684210525" y="1.0"/>
+          <connection_characteristic_point x="0.21052631578947367" y="1.0"/>
+          <connection_characteristic_point x="0.2631578947368421" y="1.0"/>
+          <connection_characteristic_point x="0.3157894736842105" y="1.0"/>
+          <connection_characteristic_point x="0.3684210526315789" y="1.0"/>
+          <connection_characteristic_point x="0.42105263157894735" y="1.0"/>
+          <connection_characteristic_point x="0.47368421052631576" y="1.0"/>
+          <connection_characteristic_point x="0.5263157894736842" y="1.0"/>
+          <connection_characteristic_point x="0.5789473684210527" y="1.0"/>
+          <connection_characteristic_point x="0.631578947368421" y="1.0"/>
+          <connection_characteristic_point x="0.6842105263157894" y="1.0"/>
+          <connection_characteristic_point x="0.7368421052631579" y="1.0"/>
+          <connection_characteristic_point x="0.7894736842105263" y="1.0"/>
+          <connection_characteristic_point x="0.8421052631578947" y="1.0"/>
+          <connection_characteristic_point x="0.894736842105263" y="1.0"/>
+          <connection_characteristic_point x="0.9473684210526315" y="1.0"/>
+        </line_connection_characteristic>
+      </connection>
+      <connection bandwidth="6600000" latency="30" n1="Klient" n2="FS1">
+        <line_connection_characteristic period_interval_ms="60000">
+          <connection_characteristic_point x="0.0" y="1.0"/>
+          <connection_characteristic_point x="1.0" y="1.0"/>
+          <connection_characteristic_point x="0.05263157894736842" y="1.0"/>
+          <connection_characteristic_point x="0.10526315789473684" y="1.0"/>
+          <connection_characteristic_point x="0.15789473684210525" y="1.0"/>
+          <connection_characteristic_point x="0.21052631578947367" y="1.0"/>
+          <connection_characteristic_point x="0.2631578947368421" y="1.0"/>
+          <connection_characteristic_point x="0.3157894736842105" y="1.0"/>
+          <connection_characteristic_point x="0.3684210526315789" y="1.0"/>
+          <connection_characteristic_point x="0.42105263157894735" y="1.0"/>
+          <connection_characteristic_point x="0.47368421052631576" y="1.0"/>
+          <connection_characteristic_point x="0.5263157894736842" y="1.0"/>
+          <connection_characteristic_point x="0.5789473684210527" y="1.0"/>
+          <connection_characteristic_point x="0.631578947368421" y="1.0"/>
+          <connection_characteristic_point x="0.6842105263157894" y="1.0"/>
+          <connection_characteristic_point x="0.7368421052631579" y="1.0"/>
+          <connection_characteristic_point x="0.7894736842105263" y="1.0"/>
+          <connection_characteristic_point x="0.8421052631578947" y="1.0"/>
+          <connection_characteristic_point x="0.894736842105263" y="1.0"/>
+          <connection_characteristic_point x="0.9473684210526315" y="1.0"/>
+        </line_connection_characteristic>
+      </connection>
+      <connection bandwidth="1400000" latency="60" n1="Klient" n2="FS2">
+        <line_connection_characteristic period_interval_ms="60000">
+          <connection_characteristic_point x="0.0" y="1.0"/>
+          <connection_characteristic_point x="1.0" y="1.0"/>
+          <connection_characteristic_point x="0.05263157894736842" y="1.0"/>
+          <connection_characteristic_point x="0.10526315789473684" y="1.0"/>
+          <connection_characteristic_point x="0.15789473684210525" y="1.0"/>
+          <connection_characteristic_point x="0.21052631578947367" y="1.0"/>
+          <connection_characteristic_point x="0.2631578947368421" y="1.0"/>
+          <connection_characteristic_point x="0.3157894736842105" y="1.0"/>
+          <connection_characteristic_point x="0.3684210526315789" y="1.0"/>
+          <connection_characteristic_point x="0.42105263157894735" y="1.0"/>
+          <connection_characteristic_point x="0.47368421052631576" y="1.0"/>
+          <connection_characteristic_point x="0.5263157894736842" y="1.0"/>
+          <connection_characteristic_point x="0.5789473684210527" y="1.0"/>
+          <connection_characteristic_point x="0.631578947368421" y="1.0"/>
+          <connection_characteristic_point x="0.6842105263157894" y="1.0"/>
+          <connection_characteristic_point x="0.7368421052631579" y="1.0"/>
+          <connection_characteristic_point x="0.7894736842105263" y="1.0"/>
+          <connection_characteristic_point x="0.8421052631578947" y="1.0"/>
+          <connection_characteristic_point x="0.894736842105263" y="1.0"/>
+          <connection_characteristic_point x="0.9473684210526315" y="1.0"/>
+        </line_connection_characteristic>
+      </connection>
+    </node_connections>
+  </content_pane>
+</root_layout>
